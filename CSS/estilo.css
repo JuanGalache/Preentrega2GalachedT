@@ -69,6 +69,7 @@ h2 {
     padding-left: 20px;
 }
 
+
 .hiss:link{
     color: gray;
 }
@@ -200,6 +201,7 @@ h2 {
     text-decoration: dotted;
 }
 footer{
+    font-size: 1rem;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -251,6 +253,10 @@ footer{
     .kaleido{
         height: 500px;
     }
+    .hiss{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
 }
 
@@ -273,6 +279,10 @@ footer{
     }
     li{
         font-size: 1rem;
+    }
+    .hiss{
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .father{
         display: grid;
@@ -340,6 +350,9 @@ footer{
         padding-right: 10%;
         margin-top: 10px;
         height: 350px;
+    }
+    footer{
+        font-size: 0.6rem;
     }
 
 }

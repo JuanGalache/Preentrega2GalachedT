@@ -1,0 +1,127 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(175, 216, 255);
+}
+header {
+    padding: 10px;
+    position: sticky;
+}
+
+ul {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.hiss{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.hiss:link{
+    color: gray;
+}
+.hiss:visited {
+    color: grey;
+}
+.hiss:hover{
+    color: goldenrod;
+}
+.his{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.his:link{
+    color: antiquewhite;
+}
+.his:visited {
+    color: antiquewhite;
+}
+.his:hover{
+    color: green;
+}
+li {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+hr {
+    position: relative;
+    background-color: rgb(21, 72, 119);
+    height: 4px;
+    width: 90%;
+}
+
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.itachi{
+    font-weight: 100;
+}
+.main{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.hope{
+    background-color: rgb(95, 151, 203);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.tesis{
+    height: 10rem;
+}
+@media(max-width: 1024px){
+    h1{
+        font-size: 2.2rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    li{
+        font-size: 100%;
+    }
+    .his{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .tesis{
+        height: 7rem;
+    }
+}
+@media(max-width: 500px){
+    li{
+        font-size: 1rem;
+    }
+    .his{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    h1{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    .tesis{
+        height: 4rem;
+    }
+
+}
