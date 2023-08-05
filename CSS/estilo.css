@@ -8,6 +8,7 @@ header {
     padding: 10px;
     position: sticky;
 }
+
 ul {
     display: flex;
     flex-direction: row;
@@ -23,6 +24,12 @@ hr {
     background-color: black;
     height: 4px;
     width: 90%;
+}
+.info {
+    grid-area: info;
+}
+.pro {
+    grid-area: pro;
 }
 
 h1{
@@ -127,7 +134,7 @@ h2 {
     margin-top: 20px;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
     grid-template-areas: 
     "raiders raiders time";
@@ -146,16 +153,16 @@ h2 {
     margin-right: 5rem;
 }
 .pikachu{
+    width: 100%;
     display: grid;
+    column-gap: 20px;
     grid-template-areas: 
     "eco mythology kaleido";
 }
 .mythology{
-    padding: 40px;
+    padding: 20px;
     height: 700px;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
     background-color: rgb(224, 165, 165);
     grid-area: mythology;
     align-self: center;
@@ -165,7 +172,7 @@ h2 {
 .eco{
     height: 700px;
     margin-top: 20px;
-    padding: 40px;
+    padding: 20px;
     background-color: rgb(224, 165, 165);
     grid-area: eco;
     align-self: center;
@@ -174,7 +181,7 @@ h2 {
 }
 .kaleido{
     margin-top: 20px;
-    padding: 40px;
+    padding: 20px;
     height: 700px;
     background-color: rgb(224, 165, 165);
     grid-area: kaleido;
@@ -254,8 +261,19 @@ footer{
         "main main main line juan"
         "main main main line juan";
     }
+
 }
-@media(min-width: 524px) {
+@media(max-width: 500px) {
+    ul{
+        display: grid;
+        text-align: center;
+        grid-area: 
+        "info"
+        "pro";
+    }
+    li{
+        font-size: 1rem;
+    }
     .father{
         display: grid;
         grid-template-areas: 
@@ -265,41 +283,63 @@ footer{
     .vertical-line{
         display: none;
     }
+    .timeraiders{
+        margin-top: 10px;
+    }
     h1{
+        text-align: center;
         font-size: 1.6rem;
     }
     h2{
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
     h3{
-        font-size: 0.2rem;
+        font-size: 0.8rem;
     }
     li{
-        font-size: 100%;
+        font-size: 80%;
     }
     .shadow{
-        width: 10rem;
+        width: 6rem;
+    }
+    .itachi{
+        text-align: center;
+        font-size: 0.7rem;
     }
     .quest{
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
     .quest::first-letter{
-        font-size: 1.8rem;
-    }
-    .box{
-        font-size: 0.4rem;
-    }
-    .box:hover{
         font-size: 1.2rem;
     }
+    .box{
+        padding: 9px 15px;
+        font-size: 0.6rem;
+    }
+    .box:hover{
+        font-size: 0.5rem;
+    }
+    .pikachu{
+        display: contents;
+        width: 100%;
+    }
     .eco{
-        height: 500px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 10px;
+        height: 350px;
     }
     .mythology{
-        height: 500px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 10px;
+        height: 350px;
     }
     .kaleido{
-        height: 500px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 10px;
+        height: 350px;
     }
 
 }
