@@ -1,0 +1,305 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(253, 232, 236);
+}
+header {
+    padding: 10px;
+    position: sticky;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+li {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+hr {
+    position: relative;
+    background-color: black;
+    height: 4px;
+    width: 90%;
+}
+
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.itachi{
+    font-weight: 100;
+}
+.vertical-line {
+    grid-area: line;
+    border-left: 2px solid black; 
+    height: 400px;
+    align-self: center;
+
+  }
+.father{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.main{
+    grid-area: main;
+    align-self: flex-start;
+    justify-content: flex-start;
+    padding-right: 20px;
+}
+.juan{
+    grid-area: juan;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.hiss:link{
+    color: gray;
+}
+.hiss:visited {
+    color: grey;
+}
+.hiss:hover{
+    color: goldenrod;
+}
+
+.shadow {
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+}
+.nutrieat {
+    display: grid;
+    background-color: rgb(224, 165, 165);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: right;
+    grid-template-areas: 
+    "eat nutri nutri";
+}
+.eat {
+    grid-area: eat;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+.nutri {
+    grid-area: nutri;
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin-left: 5rem;
+}
+
+.box {
+    background-color: rgb(241, 208, 208);
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    color: #0f0f0f;
+    font-weight: bold;
+}
+.box:link {
+    color: #0f0f0f;
+}
+.box:visited {
+    color: #0f0f0f;
+}
+.box:hover{
+    color: rgb(241, 208, 208);
+    background-color: #0f0f0f;
+    font-size: 1.6rem;
+}
+
+.timeraiders {
+    display: grid;
+    background-color: rgb(224, 165, 165);
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-template-areas: 
+    "raiders raiders time";
+}
+.time{
+    grid-area: time;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.raiders {
+    grid-area: raiders;
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin-right: 5rem;
+}
+.pikachu{
+    display: grid;
+    grid-template-areas: 
+    "eco mythology kaleido";
+}
+.mythology{
+    padding: 40px;
+    height: 700px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(224, 165, 165);
+    grid-area: mythology;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+.eco{
+    height: 700px;
+    margin-top: 20px;
+    padding: 40px;
+    background-color: rgb(224, 165, 165);
+    grid-area: eco;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+.kaleido{
+    margin-top: 20px;
+    padding: 40px;
+    height: 700px;
+    background-color: rgb(224, 165, 165);
+    grid-area: kaleido;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+.quest{
+    font-size: 2rem;
+    font-style: oblique;
+    color: rgb(24, 24, 24);
+}
+.quest::first-letter{
+    color:  aliceblue;
+    font-size: 2.4rem;
+    text-decoration: dotted;
+}
+footer{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+@media(max-width: 1024px) {
+    .father{
+        display: grid;
+        grid-template-areas: 
+        "juan"
+        "main";
+    }
+    .vertical-line{
+        display: none;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    li{
+        font-size: 100%;
+    }
+    .shadow{
+        width: 10rem;
+    }
+    .quest{
+        font-size: 1.4rem;
+    }
+    .quest::first-letter{
+        font-size: 1.8rem;
+    }
+    .box{
+        font-size: 1rem;
+    }
+    .box:hover{
+        font-size: 1.2rem;
+    }
+    .eco{
+        height: 500px;
+    }
+    .mythology{
+        height: 500px;
+    }
+    .kaleido{
+        height: 500px;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    .father{
+        display: grid;
+        grid-template-areas: 
+        "main main main line juan"
+        "main main main line juan";
+    }
+}
+@media(min-width: 524px) {
+    .father{
+        display: grid;
+        grid-template-areas: 
+        "juan"
+        "main";
+    }
+    .vertical-line{
+        display: none;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 0.6rem;
+    }
+    h3{
+        font-size: 0.2rem;
+    }
+    li{
+        font-size: 100%;
+    }
+    .shadow{
+        width: 10rem;
+    }
+    .quest{
+        font-size: 1.4rem;
+    }
+    .quest::first-letter{
+        font-size: 1.8rem;
+    }
+    .box{
+        font-size: 0.4rem;
+    }
+    .box:hover{
+        font-size: 1.2rem;
+    }
+    .eco{
+        height: 500px;
+    }
+    .mythology{
+        height: 500px;
+    }
+    .kaleido{
+        height: 500px;
+    }
+
+}
